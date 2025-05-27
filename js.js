@@ -20,3 +20,12 @@ console.log(str6.charAt());
 console.log(str6.slice(1,5));
 //substring(start,end) similar to slice but does not support negative indices
 console.log(str6.substring(1,4));
+//modifying strings toLowerCase()/toUpperCase()/trim()/trimStart()/trimEnd()/
+console.log(str6.toLowerCase());
+console.log(str6.toUpperCase());
+let stri=" Akhil  ";
+console.log(stri.trim());
+let string1="  HaiAkhil"
+console.log(string1.trimStart());
+let string2="Akhil-javascript   ";
+console.log(string2.trimEnd());
