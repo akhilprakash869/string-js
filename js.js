@@ -29,3 +29,14 @@ let string1="  HaiAkhil"
 console.log(string1.trimStart());
 let string2="Akhil-javascript   ";
 console.log(string2.trimEnd());
+let strr=string1.toUpperCase();
+console.log(strr);
+//fitst letter of the name only capitalise
+let strin6="akhilprakash";
+let capital=strin6.slice(0,1);
+let capcase=capital.toUpperCase();
+let reste=strin6.slice(1,strin6.length);
+let concatena=capcase+reste;
+console.log(concatena);
+//console.log(capital);
+//console.log(capcase);
