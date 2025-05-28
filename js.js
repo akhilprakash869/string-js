@@ -1,12 +1,7 @@
-let str="  helloworld  ";
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str.trim());
-console.log(str.trimStart());
-console.log(str.trimEnd());
-console.log(str.charAt(3));
-console.log(str.charCodeAt(5));
-console.log(str.lastIndexOf());
-console.log(str.length);
-let str1="Akhilprakash";
-console.log(str1.length);
+let a=0;
+let b=-10;
+if(a>b){
+    console.log("my name is akhil prakash");
+}else{
+    console.log(" i can't tell my name");
+};
