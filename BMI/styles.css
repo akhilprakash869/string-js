@@ -24,6 +24,8 @@ body{
     
 }
 .input{
+    font-size: 20px;
+    font-weight:  bold;
     text-align: left;
     margin-left: 120px;
 }
@@ -40,7 +42,8 @@ body{
     width: 200px;
 }
 #btn{
-    
+    font-size: 15px;
+    font-weight: bold;
     margin-top: 10px;
     outline: none;
     border: none;
@@ -54,12 +57,17 @@ body{
     
 }
 #btn:active{
-    background-color: aliceblue;
+    background-color: rgba(182, 0, 0, 0.924);
     color: black;
     box-shadow: 5px black;
 }
+#output,#state{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(13, 0, 255);
+}
 .loader {
-display: none;
+
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid blue;

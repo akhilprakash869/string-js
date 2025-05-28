@@ -2,6 +2,28 @@
 document.querySelector(".calculate").addEventListener("click",BMI);
 document.querySelector(".clear").addEventListener("click",clear);
 
+//using enter event
+document.getElementById("height").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        document.getElementById("weight").focus(); // Move focus to Weight input
+    }
+});
+
+document.getElementById("weight").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent form submission
+        BMI(); // Call BMI calculation function
+    }
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter" && document.activeElement.classList.contains("clear")) {
+        clear(); // Call clear function
+    }
+});
+
+//close enter event
+
 //fucntion BMI
 //calculate BMI function
 function BMI(){
@@ -18,6 +40,8 @@ function BMI(){
     
     output.innerHTML = "Your BMI is " + index;
     const state=document.getElementById("state");
+    //play audio
+   
 //checking bmi category
 
  
