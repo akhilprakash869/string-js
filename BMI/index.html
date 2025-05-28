@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI calculator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-   <div class="wrapper">
-     <!--heading-->
-    <h1 class="heading">BMI calculator</h1>
-    <h3> Enter you'r height in (C.M.) Enter you'r weight in(K.G)</h3>
-<!--input-->
-    <p class="input">Height</p>
+  <body>
+    <div class="wrapper">
+      <!--heading-->
+      <h1 class="heading">BMI calculator</h1>
+      <h3>Enter you'r height in (C.M.) Enter you'r weight in(K.G)</h3>
+      <!--input-->
+      <p class="input">Height</p>
 
-    <input type="number" onfocus="this.value=''" id="height">
-    
-    <p class="input">Weight</p>
+      <input type="number" onfocus="this.value=''" id="height" />
 
-    <input type="number" onfocus="this.value='' " id="weight">
-    
-   
-       <div id="loader"></div>
-<p id="output"></p>
-<p id="state"></p>
-    <!--two button calculate and clear-->
-    <br>
-    <br>
-     <button id="btn" class="calculate">Calculate</button>
-     <button id="btn"class="clear">Clear</button>
-    <!--footer -->
-    <br>
-    <br>
-    <footer class="footer">@copy designed by Akhil</footer>
+      <p class="input">Weight</p>
 
-   </div>
-    <script src="js.js">  </script>
-</body>
+      <input type="number" onfocus="this.value='' " id="weight" />
 
+      <div id="loader"></div>
+      <p id="output"></p>
+      <p id="state"></p>
+      <!--two button calculate and clear-->
+      <br />
+      <br />
+      <button id="btn" class="calculate">Calculate</button>
+      <button id="btn" class="clear">Clear</button>
+      <!--footer -->
+      <br />
+      <br />
+      <footer class="footer">@copy designed by Akhil</footer>
+    </div>
+    <script src="js.js"></script>
+  </body>
 </html>

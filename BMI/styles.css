@@ -1,73 +1,71 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    min-height: 100vh;
-    background-image: url(Food.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url(Food.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.wrapper{
-    width: 500px; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#aed900;
-    opacity: 0.7;
-    border-radius: 1rem;
-    padding: 50px,20px;
-    box-shadow: 20px 50px 20px color(black);
-    
+.wrapper {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #aed900;
+  opacity: 0.9;
+  border-radius: 1rem;
+  padding: 50px, 20px;
+  box-shadow: 20px 50px 20px color(black);
 }
-.input{
-    font-size: 20px;
-    font-weight:  bold;
-    text-align: left;
-    margin-left: 120px;
+.input {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 120px;
 }
 #height,
-#weight{
-    color: solid black;
-    text-align: left;
-    font-size: 20px;
-    font: weight 300px;
-    outline: none;
-    background: none;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    width: 200px;
+#weight {
+  color: solid black;
+  text-align: left;
+  font-size: 20px;
+  font: weight 300px;
+  outline: none;
+  background: none;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  width: 200px;
 }
-#btn{
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: white;
-    background-color: black;
-    width: 150px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 5px 2px color black;
-    
+#btn {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 2px color black;
 }
-#btn:active{
-    background-color: rgba(182, 0, 0, 0.924);
-    color: black;
-    box-shadow: 5px black;
+#btn:active {
+  background-color: rgba(182, 0, 0, 0.924);
+  color: black;
+  box-shadow: 5px black;
 }
-#output,#state{
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(13, 0, 255);
+#output,
+#state {
+  font-size: 20px;
+  font-weight: bold;
+  color: lch(0% 0 0 / 0.847);
 }
 .loader {
-
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid blue;
@@ -78,8 +76,10 @@ body{
   animation: spin 2s linear infinite;
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
