@@ -9,22 +9,34 @@
 </head>
 
 <body>
-    <!--heading-->
+   <div class="wrapper">
+     <!--heading-->
     <h1 class="heading">BMI calculator</h1>
     <h3> Enter you'r height in (C.M.) Enter you'r weight in(K.G)</h3>
 <!--input-->
-    <input type="number" onfocus="this.value=''" id="height">
     <p>Height</p>
-    <input type="number" onfocus="this.value='' " id="weight">
+
+    <input type="number" onfocus="this.value=''" id="height">
+    
     <p>Weight</p>
 
+    <input type="number" onfocus="this.value='' " id="weight">
+    
+   
+       <div class="loader"></div>
+<p class="output"></p>
+<p class="state"></p>
     <!--two button calculate and clear-->
-    <button id="btn" class="calculate">Calculate</button>
+    <br>
+    <br>
+     <button id="btn" class="calculate">Calculate</button>
      <button id="btn"class="clear">Clear</button>
     <!--footer -->
     <br>
     <br>
     <footer class="footer">@copy designed by Akhil</footer>
+
+   </div>
     <script src="js.js">  </script>
 </body>
 

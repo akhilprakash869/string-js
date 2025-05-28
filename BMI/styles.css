@@ -5,5 +5,73 @@ body{
     text-align: center;
     min-height: 100vh;
     background-image: url(Food.png);
-    user-select: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
+.wrapper{
+    width: 500px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#aed900;
+    opacity: 0.7;
+    border-radius: 1rem;
+    padding: 50px,20px;
+    box-shadow: 20px 50px 20px color(black);
+    
+}
+.input{
+    text-align: left;
+    margin-left: 120px;
+}
+#height,
+#weight{
+    color: solid black;
+    text-align: left;
+    font-size: 20px;
+    font: weight 300px;
+    outline: none;
+    background: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    width: 200px;
+}
+#btn{
+    
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px color black;
+    
+}
+#btn:active{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 5px black;
+}
+.loader {
+display: none;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
