@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
   min-height: 100vh;
   background-image: url(Food.png);
@@ -10,6 +9,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .wrapper {
   width: 500px;
   position: absolute;
@@ -19,28 +19,32 @@ body {
   background-color: #aed900;
   opacity: 0.9;
   border-radius: 1rem;
-  padding: 50px, 20px;
-  box-shadow: 20px 50px 20px color(black);
+  padding: 50px 20px;
+  box-shadow: 20px 50px 20px black;
 }
+
 .input {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
   margin-left: 120px;
 }
+
 #height,
 #weight {
-  color: solid black;
+  color: black;
   text-align: left;
   font-size: 20px;
-  font: weight 300px;
+  font-weight: 300;
   outline: none;
   background: none;
   border-right: 1px solid black;
   border-left: 1px solid black;
   width: 200px;
 }
-#btn {
+
+#calculatebtn,
+#clearbtn {
   font-size: 15px;
   font-weight: bold;
   margin-top: 10px;
@@ -52,19 +56,23 @@ body {
   width: 150px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 2px 5px 2px color black;
+  box-shadow: 2px 5px 2px black;
 }
-#btn:active {
+
+#calculatebtn,
+#clearbtn:active {
   background-color: rgba(182, 0, 0, 0.924);
   color: black;
-  box-shadow: 5px black;
+  box-shadow: 5px 5px 10px black;
 }
+
 #output,
 #state {
   font-size: 20px;
   font-weight: bold;
-  color: lch(0% 0 0 / 0.847);
+  color: rgba(0, 0, 0, 0.85);
 }
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -75,6 +83,7 @@ body {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -83,4 +92,3 @@ body {
     transform: rotate(360deg);
   }
 }
-

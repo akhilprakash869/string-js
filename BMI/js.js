@@ -1,8 +1,8 @@
-//eventlistner for buton click
-document.querySelector(".calculate").addEventListener("click", BMI);
-document.querySelector(".clear").addEventListener("click", clear);
+// Event listener for button click
+document.getElementById("calculateBtn").addEventListener("click", BMI);
+document.getElementById("clearBtn").addEventListener("click", clear);
 
-//using enter event
+// Using Enter key event
 document.getElementById("height").addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     document.getElementById("weight").focus(); // Move focus to Weight input
@@ -17,35 +17,26 @@ document.getElementById("weight").addEventListener("keydown", function (event) {
 });
 
 document.addEventListener("keydown", function (event) {
-  if (
-    event.key === "Enter" &&
-    document.activeElement.classList.contains("clear")
-  ) {
+  if (event.key === "Enter" && document.activeElement.id === "clearBtn") {
     clear(); // Call clear function
   }
 });
 
-//close enter event
-
-//fucntion BMI
-//calculate BMI function
+// Function BMI (Calculate BMI)
 function BMI() {
   const height = document.getElementById("height").value;
   const weight = document.getElementById("weight").value;
-  //bmi formula
-  if (height !== "" && weight !== "") {
+
+  // Check height and weight are valid numbers
+  if (height > 0 && weight > 0) {
     let index = (weight / (height / 100) ** 2).toFixed(2);
 
-    //check height and weight are not equal to zero
-
     const output = document.getElementById("output");
-
     output.innerHTML = "Your BMI is " + index;
+
     const state = document.getElementById("state");
-    //play audio
 
-    //checking bmi category
-
+    // Checking BMI category
     if (index < 18.5) {
       state.innerHTML = "Category: Underweight";
     } else if (index >= 18.5 && index < 24.9) {
@@ -56,10 +47,11 @@ function BMI() {
       state.innerHTML = "Category: Obese";
     }
   } else {
-    alert("Error..! Please enter valid height and weight.");
+    alert("Error..! Please enter a valid height and weight greater than zero.");
   }
 }
-//function clear
+
+// Function to clear inputs and outputs
 function clear() {
   document.getElementById("height").value = "";
   document.getElementById("weight").value = "";
